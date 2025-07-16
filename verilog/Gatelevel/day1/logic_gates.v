@@ -1,6 +1,6 @@
 module logic_gates(a,b,c,y);
   //declare input & output pins
-  input a,b,c;
+  input a,b;
   output y;
   //here verilog code by gateprimitives for logic_gates
   and(y,a,b);

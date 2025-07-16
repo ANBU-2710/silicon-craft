@@ -1,7 +1,7 @@
-module logic_gates(a,b,c,y);
+module logic_gates(a,b,y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y11,y12);
   //declare input & output pins
   input a,b;
-  output y;
+  output y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y11,y12;
   //here verilog code by gateprimitives for logic_gates
   and(y,a,b);
   or(y,a,b);

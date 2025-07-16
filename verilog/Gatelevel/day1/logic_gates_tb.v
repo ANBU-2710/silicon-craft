@@ -18,7 +18,7 @@ module logic_gates_tb;
     #10;
     a=1;b=0;
     #10;
-    a=1,b=1;
+    a=1;b=1;
     $finish;
   end
 endmodule

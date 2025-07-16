@@ -4,4 +4,11 @@ module logic_gates_tb;
   reg a,b;
   wire y;
   //instantiate the logicgate module
-  logicgates
+  logic_gates gates(
+    .a(a),
+    .b(b),
+    .y(y)
+  );
+  //open initial block
+  initial begin
+    $

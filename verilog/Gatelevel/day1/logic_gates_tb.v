@@ -6,8 +6,19 @@ module logic_gates_tb;
   //instantiate the logicgate module
   logic_gates gates(
     .a(a),
-    .b(b), 
-    .y(y)
+    .b(b),  
+    .y1(y1),
+    .y2(y2),
+    .y3(y3) 
+    .y4(y4),
+    .y5(y5),
+    .y6(y6),
+    .y7(y7),
+    .y8(y8),
+    .y9(y9),
+    .y10(y10),      
+    .y11(y11),
+    .y12(y12)
   );
   //open initial block
   initial begin

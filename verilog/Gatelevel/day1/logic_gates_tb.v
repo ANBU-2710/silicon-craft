@@ -2,7 +2,7 @@ module logic_gates_tb;
   //assign inputs to reg
   //assign outputs to wire
   reg a,b;
-  wire y;
+  wire y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y11,y12;
   //instantiate the logicgate module
   logic_gates gates(
     .a(a),
@@ -22,7 +22,8 @@ module logic_gates_tb;
   );
   //open initial block
   initial begin
-    $monitor("Time=%0t,a= %b : b= %b --> y=%b",$time,a,b,y);
+    $monitor("Time=%0t,a= %b : b= %b --> Yand=%b|Yor=%b|Yxor=%b|Ynand=%b|Ynor=%b|Yxnor=%b|Ybuf=%b|Yb1=%b|Yb0=%b|Ynot=%b|Yn1=%b|Yno=%b",
+             $time,a,b,y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y11,y12);
     a=0;b=0;
     #10;
     a=0;b=1;

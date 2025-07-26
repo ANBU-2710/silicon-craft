@@ -12,6 +12,12 @@ decoder2_4 decoder(
 	.d2(d2),
 	.d3(d3)
 );
+//dumping the values
+initial begin
+	$dumpfile("2to4_decoder.vcd");
+	$dumpvars(0,decoder2_4_tb);
+end
+//give the test sequences
 initial begin 
 	$monitor("din=%2b||d0=%b|d1=%b|d2=%b|d3=%b",din,d0,d1,d2,d3);
 	din=2'b00;

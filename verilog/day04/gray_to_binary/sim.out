@@ -1,0 +1,67 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x63e67f38a470 .scope module, "g_to_b_tb" "g_to_b_tb" 2 1;
+ .timescale 0 0;
+v0x63e67f39e780_0 .net "binary", 3 0, L_0x63e67f39f070;  1 drivers
+v0x63e67f39e840_0 .var "gray", 3 0;
+v0x63e67f39e910_0 .var/i "i", 31 0;
+S_0x63e67f38a600 .scope module, "g_b" "g_to_b" 2 5, 3 1 0, S_0x63e67f38a470;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "gin";
+    .port_info 1 /OUTPUT 4 "bout";
+L_0x63e67f39ec40 .functor XOR 1, L_0x63e67f39eab0, L_0x63e67f39eba0, C4<0>, C4<0>;
+L_0x63e67f39ef80 .functor XOR 1, L_0x63e67f39ed80, L_0x63e67f39ee50, C4<0>, C4<0>;
+L_0x63e67f39f410 .functor XOR 1, L_0x63e67f39f280, L_0x63e67f39f320, C4<0>, C4<0>;
+v0x63e67f377c50_0 .net *"_ivl_10", 0 0, L_0x63e67f39ec40;  1 drivers
+v0x63e67f39dd50_0 .net *"_ivl_15", 0 0, L_0x63e67f39ed80;  1 drivers
+v0x63e67f39de30_0 .net *"_ivl_17", 0 0, L_0x63e67f39ee50;  1 drivers
+v0x63e67f39def0_0 .net *"_ivl_18", 0 0, L_0x63e67f39ef80;  1 drivers
+v0x63e67f39dfd0_0 .net *"_ivl_24", 0 0, L_0x63e67f39f280;  1 drivers
+v0x63e67f39e100_0 .net *"_ivl_26", 0 0, L_0x63e67f39f320;  1 drivers
+v0x63e67f39e1e0_0 .net *"_ivl_27", 0 0, L_0x63e67f39f410;  1 drivers
+v0x63e67f39e2c0_0 .net *"_ivl_3", 0 0, L_0x63e67f39e9e0;  1 drivers
+v0x63e67f39e3a0_0 .net *"_ivl_7", 0 0, L_0x63e67f39eab0;  1 drivers
+v0x63e67f39e480_0 .net *"_ivl_9", 0 0, L_0x63e67f39eba0;  1 drivers
+v0x63e67f39e560_0 .net "bout", 3 0, L_0x63e67f39f070;  alias, 1 drivers
+v0x63e67f39e640_0 .net "gin", 3 0, v0x63e67f39e840_0;  1 drivers
+L_0x63e67f39e9e0 .part v0x63e67f39e840_0, 3, 1;
+L_0x63e67f39eab0 .part L_0x63e67f39f070, 3, 1;
+L_0x63e67f39eba0 .part v0x63e67f39e840_0, 2, 1;
+L_0x63e67f39ed80 .part L_0x63e67f39f070, 2, 1;
+L_0x63e67f39ee50 .part v0x63e67f39e840_0, 1, 1;
+L_0x63e67f39f070 .concat8 [ 1 1 1 1], L_0x63e67f39f410, L_0x63e67f39ef80, L_0x63e67f39ec40, L_0x63e67f39e9e0;
+L_0x63e67f39f280 .part L_0x63e67f39f070, 1, 1;
+L_0x63e67f39f320 .part v0x63e67f39e840_0, 0, 1;
+    .scope S_0x63e67f38a470;
+T_0 ;
+    %vpi_call 2 10 "$monitor", "gray=%4b||binary=%4b", v0x63e67f39e840_0, v0x63e67f39e780_0 {0 0 0};
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x63e67f39e910_0, 0, 32;
+T_0.0 ;
+    %load/vec4 v0x63e67f39e910_0;
+    %cmpi/s 16, 0, 32;
+    %jmp/0xz T_0.1, 5;
+    %load/vec4 v0x63e67f39e910_0;
+    %pad/s 4;
+    %store/vec4 v0x63e67f39e840_0, 0, 4;
+    %delay 10, 0;
+    %load/vec4 v0x63e67f39e910_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x63e67f39e910_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "g_to_b_tb.v";
+    "g_to_b.v";

@@ -19,8 +19,12 @@ reg clk,rst_n,tx_start;
 		tx_start = 0;
 		
 		wait(rx_done);
-		$display("received_data = %h",rx_data);
+		$display("received_data = %c",rx_data);
 		#500;
 		$finish;
+	end
+	initial begin
+		$dumpfile("uart.vcd");
+		$dumpvars(0,uart_top_tb);
 	end
 endmodule

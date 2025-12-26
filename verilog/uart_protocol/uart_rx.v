@@ -3,7 +3,7 @@ module uart_rx (input clk,rst_n,baud_tick,rx_data_in,output reg [7:0] rx_data,
 reg[7:0] data_reg;
 reg[3:0] bit_count;
 reg rx_busy;
-always@(posedge clk or negedge !rst_n)begin
+always@(posedge clk or negedge rst_n)begin
 	if(!rst_n)begin
 		bit_count <= 0;
 		rx_busy <= 0;

@@ -1,4 +1,4 @@
-module uart_top;
+module uart_top(
 input clk,rst_n,baud_tick,tx_start,
 	input[7:0]tx_data,
 	output tx_busy,rx_done,

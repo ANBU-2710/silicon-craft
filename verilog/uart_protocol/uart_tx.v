@@ -8,7 +8,7 @@ wire [width-1:0] uart_frame;
 wire serial_out;
 frame_gen fg_tx(.data_in(tx_data),
 	.frame_out(uart_frame));
-piso_reg piso_tx #(.width(10)(.clk(clk),
+piso_reg piso_tx #(.width(10))(.clk(clk),
 	.rst_n(rst_n),
 	.shift(shift_piso),
 	.load(load_piso),

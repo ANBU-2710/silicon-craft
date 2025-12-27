@@ -1,0 +1,43 @@
+[33mb83429a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: pull --rebase origin main: Fast-forward
+[33m43e2cbf[m HEAD@{1}: rebase (abort): returning to refs/heads/main
+[33m43e2cbf[m HEAD@{2}: rebase (abort): returning to refs/heads/main
+[33m8659c33[m HEAD@{3}: commit: updated
+[33m079e02e[m HEAD@{4}: commit: updated
+[33m105ce65[m HEAD@{5}: commit: updated
+[33mf1d2bdb[m HEAD@{6}: commit: update changes
+[33m7563ca6[m HEAD@{7}: commit: updates uart_top
+[33m0cdd730[m HEAD@{8}: commit: update uart
+[33m0a8832c[m HEAD@{9}: commit: uart_test soon
+[33mcb26b86[m HEAD@{10}: commit: uart_test soon
+[33m0cdc020[m HEAD@{11}: commit: uart_top soon
+[33m276c594[m HEAD@{12}: commit: uart_rx soon
+[33m826d5dc[m HEAD@{13}: pull: Fast-forward
+[33m194f423[m HEAD@{14}: commit: update changes
+[33m3e36d09[m HEAD@{15}: pull: Fast-forward
+[33m36889e8[m HEAD@{16}: commit: update changes
+[33m13d8c65[m HEAD@{17}: pull: Fast-forward
+[33m387e1c4[m HEAD@{18}: commit: update changes
+[33m5f56d0d[m HEAD@{19}: commit: update changes
+[33mb08668f[m HEAD@{20}: commit: update changes
+[33m57b40ac[m HEAD@{21}: commit (merge): resolve merge conflict
+[33m43e2cbf[m HEAD@{22}: checkout: moving from my-branch-name to main
+[33m430ceb6[m[33m ([m[1;32mmy-branch-name[m[33m)[m HEAD@{23}: checkout: moving from 430ceb66f3f6aead51997d8965cad170d9f1e6ab to my-branch-name
+[33m430ceb6[m[33m ([m[1;32mmy-branch-name[m[33m)[m HEAD@{24}: commit: update changes
+[33mc42a650[m HEAD@{25}: pull origin main --rebase (start): checkout c42a650da1a1eb6c70139bb24a7833e6bda02fa5
+[33m43e2cbf[m HEAD@{26}: commit: update changes
+[33m0e26e89[m HEAD@{27}: commit: update changes
+[33mbb9c3b9[m HEAD@{28}: commit: update changes
+[33m0bbebff[m HEAD@{29}: commit: update changes
+[33m54b330a[m HEAD@{30}: pull --rebase origin main: Fast-forward
+[33mf9540b9[m HEAD@{31}: commit: update chages
+[33mf998731[m HEAD@{32}: commit: update chages
+[33m4f09c4d[m HEAD@{33}: commit: update changes
+[33mc98edda[m HEAD@{34}: commit: update changes
+[33m3a507c7[m HEAD@{35}: commit: update the changes
+[33m1abef33[m HEAD@{36}: pull: Fast-forward
+[33mbc6d5e7[m HEAD@{37}: commit: replace dataflow folder
+[33m5532047[m HEAD@{38}: pull: Fast-forward
+[33m3a0a14b[m HEAD@{39}: commit: Replace gatelevel folder with updated full adder, subtractor, and logic gate modules
+[33m542424b[m HEAD@{40}: commit: x
+[33m1973963[m HEAD@{41}: pull: Fast-forward
+[33m8d7a2d8[m HEAD@{42}: clone: from https://github.com/ANBU-2710/silicon-craft.git
